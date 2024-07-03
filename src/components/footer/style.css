@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  padding: 1rem;
+  color: var(--text-color);
+  background: var(--background);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-content: center;
+  font-style: italic;
+  font-size: 0.7em;
+  z-index: 1000; /* Ensure it stays above other content if necessary */
+}
+
+.footer a {
+  margin: 0 0.5rem;
+}
+
+.footer .divider {
+  border-left: 1px solid var(--text-color);
+  margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.6em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.5em; /* Further adjust font size for very small screens */
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+}
